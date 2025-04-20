@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "298217913787",
+    "project_id": "novaflix-412d7",
+    "storage_bucket": "novaflix-412d7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298217913787:android:7e8b43ec9b8afc23c6d89e",
+        "android_client_info": {
+          "package_name": "com.example.novaflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298217913787-hqr5r5datbgna5cuncbkco7guke3deqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.novaflix",
+            "certificate_hash": "277a0fd98322d0f052d77ecf230f0d6682e59745"
+          }
+        },
+        {
+          "client_id": "298217913787-fh59q50i2kbs1kio56fq76co6vuljj8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBQEhJAw_tAaVJ-iLFeyfUNJ2wokYu3EQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298217913787-fh59q50i2kbs1kio56fq76co6vuljj8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

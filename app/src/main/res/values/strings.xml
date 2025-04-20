@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">NovaFlix</string>
+
+    <!-- Placeholder texts for fragments -->
+    <string name="hello_movies_fragment">Welcome to Movies</string>
+    <string name="hello_account_fragment" translatable="false">Welcome to Your Account</string>
+    <string name="hello_live_fragment">Live Channels</string>
+
+    <!-- Button texts or other reusable strings -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+
+    <string-array name="plan_options">
+        <item>Basic</item>
+        <item>Basic plus</item>
+        <item>Premium</item>
+        <item>Premium plus</item>
+        <item>V.I.P</item>
+
+    </string-array>
+
+</resources>

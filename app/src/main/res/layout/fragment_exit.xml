@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExitFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playerControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+
+        <!-- Rewind Button -->
+        <ImageButton
+            android:id="@+id/rewindButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_rewind"
+            android:contentDescription="Rewind" />
+
+        <!-- Previous Button -->
+        <ImageButton
+            android:id="@+id/previousButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_previous"
+            android:contentDescription="Previous Video" />
+
+        <!-- Play/Pause Button at the center -->
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_play"
+            android:contentDescription="Play/Pause Button" />
+
+        <!-- Next Button -->
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_next"
+            android:contentDescription="Next Video" />
+
+        <!-- Forward Button -->
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_forward"
+            android:contentDescription="Forward" />
+
+    </LinearLayout>
+
+</FrameLayout>

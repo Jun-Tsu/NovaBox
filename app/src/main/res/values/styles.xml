@@ -1,0 +1,55 @@
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.NovaFlix" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary color for the Toolbar and App -->
+        <item name="colorPrimary">@color/dark_background</item>
+        <item name="colorPrimaryDark">@color/dark_background</item>
+
+        <!-- Custom TextInputLayout styling -->
+        <item name="colorControlNormal">@color/bottom_nav_icon_color</item>
+        <item name="colorControlActivated">@color/bottom_nav_icon_color</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorLink">@android:color/holo_blue_light</item>
+    </style>
+    <!-- styles.xml -->
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!-- Toolbar Overlay Style -->
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/dark_background</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/custom_dialog_background</item> <!-- Your custom background drawable -->
+        <item name="android:textColorPrimary">@color/bottom_nav_icon_color</item> <!-- Customize text color if needed -->
+    </style>
+        <!-- Custom PopupMenu style -->
+        <style name="CustomPopupMenu" parent="Widget.MaterialComponents.PopupMenu">
+            <!-- Set the background color -->
+            <item name="android:popupBackground">@drawable/custom_popup_background</item>
+
+            <!-- Set text color (optional) -->
+            <item name="android:textColor">@color/bottom_nav_icon_color</item>
+        </style>
+    <style name="CustomPopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:background">@drawable/custom_popup_background</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/dark_background</item>
+        <item name="colorPrimaryDark">@color/dark_background</item>
+        <item name="colorAccent">@color/bottom_nav_icon_color</item>
+    </style>
+
+    <style name="TextAppearance.App.Small" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item> <!-- Reduced text size -->
+        <item name="android:textColor">@color/bottom_nav_icon_color</item>
+    </style>
+
+</resources>

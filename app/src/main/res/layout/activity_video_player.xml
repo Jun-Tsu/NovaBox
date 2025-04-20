@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Video Player -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <!-- Top Bar with Movie Title, Back, and Settings -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Button" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Movie Title"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/bottom_nav_icon_color"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/settingss"
+            android:contentDescription="Settings Button" />
+    </RelativeLayout>
+
+    <!-- Play/Pause and Navigation Buttons at the center of the video -->
+    <LinearLayout
+        android:id="@+id/playerControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp">
+
+        <!-- Rewind Button -->
+        <ImageButton
+            android:id="@+id/rewindButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_rewind"
+            android:contentDescription="Rewind" />
+
+        <!-- Previous Button -->
+        <ImageButton
+            android:id="@+id/previousButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_previous"
+            android:contentDescription="Previous Video" />
+
+        <!-- Play/Pause Button at the center -->
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_play"
+            android:contentDescription="Play/Pause Button" />
+
+        <!-- Next Button -->
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_next"
+            android:contentDescription="Next Video" />
+
+        <!-- Forward Button -->
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_forward"
+            android:contentDescription="Forward" />
+
+    </LinearLayout>
+
+    <!-- SeekBar for video progress -->
+    <SeekBar
+        android:id="@+id/videoSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Start time TextView -->
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/roboto"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="00:00"
+        android:textColor="@color/bottom_nav_icon_color"
+        android:textSize="18sp" />
+
+    <!-- End time TextView -->
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/roboto"
+        android:layout_alignParentRight="true"
+        android:text="00:00"
+        android:textColor="@color/bottom_nav_icon_color"
+        android:textSize="18sp" />
+</RelativeLayout>

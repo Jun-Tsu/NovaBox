@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Lottie Animation for the splash screen -->
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="17dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading_animation.json"
+        app:lottie_loop="true" />
+
+    <ImageView
+        android:id="@+id/splash_icon"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ball" />
+</RelativeLayout>

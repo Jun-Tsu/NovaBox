@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="toolbar_background">#6200EE</color>
+    <color name="toolbar_background_dark">#3700B3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="hint_color">#757575</color>
+    <color name="text_color">#212121</color>
+    <color name="purple">#800080</color>
+    <color name="nav_item_icon_tint">#757575</color>  <!-- Default icon color -->
+    <color name="nav_item_text_color">#757575</color>  <!-- Default text color -->
+    <color name="nav_item_icon_tint_active">#FFEB3B</color> <!-- Active icon color (e.g., Yellow) -->
+    <color name="nav_item_text_color_active">#FFEB3B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_background">#121212</color>
+
+    <color name="bottom_nav_background">#ffffff</color>
+    <color name="bottom_nav_icon_color">#FF9800</color>
+    <color name="bottom_nav_text_color">#000000</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="live_red">#FF3144</color>
+</resources>

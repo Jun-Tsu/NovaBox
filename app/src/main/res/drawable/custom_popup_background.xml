@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/dark_background" /> <!-- Customize the color here -->
+    <corners android:radius="8dp" /> <!-- Optional: Add rounded corners -->
+    <stroke android:color="@color/bottom_nav_icon_color" android:width="2dp" /> <!-- Optional: Add border -->
+</shape>

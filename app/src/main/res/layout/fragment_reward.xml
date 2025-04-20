@@ -1,0 +1,345 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background">
+
+    <!-- CardView for the main content -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ScrollView for scrollable content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <!-- Vertical LinearLayout for all items -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- User Level and Rank Section -->
+                <TextView
+                    android:id="@+id/level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level"
+                    android:textColor="#FFA500"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bronze"
+                    android:textColor="#FFA500"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Balance Display Section -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/coin"
+                        android:contentDescription="Coin Icon" />
+
+                    <TextView
+                        android:id="@+id/balanceValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 Points"
+                        android:textColor="#FFA500"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="8dp" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bottom_nav_icon_color"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Task Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complete Tasks and Earn Points"
+                    android:textColor="#FF9800"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/redeemButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redeem"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:backgroundTint="#FFA500"
+                    android:fontFamily="@font/roboto"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bottom_nav_icon_color"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Daily Check-in Section -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/daily_check_in"
+                        android:contentDescription="Daily Check-in Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Check-in"
+                        android:textColor="#FFC107"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="8dp" />
+
+                    <Button
+                        android:id="@+id/dailyCheckInButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:backgroundTint="#FFA500"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="16dp" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bottom_nav_icon_color"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Social Media Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow on Social Media"
+                    android:textColor="#FFC107"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageButton
+                        android:id="@+id/x_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/instagram"
+                        android:contentDescription="X Icon" />
+
+                    <ImageButton
+                        android:id="@+id/instagram_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/instagram"
+                        android:contentDescription="Instagram Icon" />
+
+                    <ImageButton
+                        android:id="@+id/facebook_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/facebook"
+                        android:contentDescription="Facebook Icon" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bottom_nav_icon_color"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Referral Code Section -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Referral Code"
+                        android:textColor="#FF9800"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto" />
+
+                    <EditText
+                        android:id="@+id/referralCode"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Your Code"
+                        android:textColorHint="@color/bottom_nav_icon_color"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto"
+                        android:padding="8dp"
+                        android:background="@drawable/smooth_background"
+                        android:layout_marginStart="8dp" />
+
+                    <ImageButton
+                        android:id="@+id/copyReferralButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/copy"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Copy Icon" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bottom_nav_icon_color"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Feedback Section -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <RatingBar
+                        android:id="@+id/feedbackRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="1.0"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:layout_marginEnd="16dp" />
+
+                    <ImageButton
+                        android:id="@+id/feedbackSubmitButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/searchs"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Submit Feedback" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bottom_nav_icon_color"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Watch Ads Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Watch Ads (Earn Points)"
+                    android:textColor="#FF9800"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageButton
+                        android:id="@+id/watchAd1Button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/youtube"
+                        android:contentDescription="Watch Ad 1" />
+
+                    <ImageButton
+                        android:id="@+id/watchAd2Button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/youtube"
+                        android:contentDescription="Watch Ad 2" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Settings Options Menu -->
+    <item
+        android:id="@+id/item_settings_option_1"
+        android:title="Check Updates"
+        android:icon="@drawable/update"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_settings_option_2"
+        android:title="Settings"
+        android:icon="@drawable/settingss"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_settings_option_3"
+        android:title="Exit"
+        android:icon="@drawable/exit"
+        app:showAsAction="ifRoom" />
+
+</menu>

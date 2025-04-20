@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingRight="20dp"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/movieThumbnail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/movie"
+        android:contentDescription="icon" />
+    <TextView
+        android:id="@+id/downloadTitle"
+        android:layout_width="200dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bottom_nav_icon_color"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/roboto"
+        android:text="Downloading..."
+        android:textSize="22sp"
+        android:maxLines="2"
+    android:ellipsize="start" />
+
+
+    <!-- Percentage Display -->
+    <TextView
+        android:id="@+id/downloadPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:layout_gravity="end"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="10dp"
+        android:textSize="26sp"
+        android:textColor="@color/bottom_nav_icon_color"
+        android:gravity="center" />
+
+    <!-- Pause/Resume Icon -->
+    <ImageView
+        android:id="@+id/pauseResumeButton"
+        android:layout_width="30dp"
+        android:layout_gravity="end"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_pause"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="Pause/Resume" />
+
+    <!-- Delete/Cancel Icon -->
+    <ImageView
+        android:id="@+id/deleteCancelButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Delete/Cancel" />
+</LinearLayout>

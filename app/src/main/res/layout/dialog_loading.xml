@@ -1,0 +1,30 @@
+<!-- dialog_loading.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingAnimation"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        app:lottie_fileName="loading_animation.json"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+
+        android:text="Loading, please wait..."
+        android:textColor="@color/bottom_nav_icon_color"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

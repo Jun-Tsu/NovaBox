@@ -1,0 +1,97 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@android:color/transparent"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@color/dark_background"
+android:padding="8dp">
+
+<!-- Movie Thumbnail -->
+<ImageView
+    android:id="@+id/movieThumbnail"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+android:scaleType="centerCrop"
+android:src="@drawable/movie"
+android:contentDescription="Movie Thumbnail" />
+
+<!-- Movie Title -->
+<TextView
+    android:id="@+id/movieTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:maxLines="1"
+    android:text="Movie Title"
+    android:textColor="@color/bottom_nav_icon_color"
+    android:textSize="14sp"
+android:textStyle="bold"
+android:fontFamily="@font/roboto"
+android:ellipsize="end" />
+
+<!-- Play Count -->
+<TextView
+    android:id="@+id/playCount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:gravity="center"
+    android:visibility="gone"
+    android:text="Plays: 1234"
+    android:textColor="@color/bottom_nav_icon_color"
+    android:textSize="10sp"
+android:fontFamily="@font/roboto" />
+
+<!-- Action Row -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <!-- Download Icon -->
+    <ImageButton
+        android:id="@+id/download_Button"
+        android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/download"
+    android:contentDescription="Download"
+    android:layout_marginEnd="8dp" />
+
+
+
+    <!-- Rating Icon -->
+    <ImageButton
+        android:id="@+id/rating_icon"
+        android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/star"
+    android:contentDescription="Rating"
+    android:layout_marginStart="8dp" />
+</LinearLayout>
+    <!-- Play Button -->
+    <Button
+        android:id="@+id/play_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:textColor="@color/bottom_nav_icon_color"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="4dp" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>

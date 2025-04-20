@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_live"
+        android:icon="@drawable/account"
+        android:title=""
+        android:iconTint="@color/nav_item_icon_tint"
+        android:titleTextColor="@color/nav_item_text_color" />
+
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@drawable/video"
+        android:title=""
+        android:iconTint="@color/nav_item_icon_tint"
+        android:titleTextColor="@color/nav_item_text_color" />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/account"
+        android:title=""
+        android:iconTint="@color/nav_item_icon_tint"
+        android:titleTextColor="@color/nav_item_text_color" />
+
+    <item
+        android:id="@+id/nav_scores"
+        android:icon="@drawable/coin"
+        android:title=""
+        android:iconTint="@color/nav_item_icon_tint"
+        android:titleTextColor="@color/nav_item_text_color" />
+</menu>

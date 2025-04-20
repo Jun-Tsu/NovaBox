@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"> <!-- Set dark background color -->
+
+    <!-- Custom Toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true" />
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="0dp"
+        android:layout_above="@id/bottom_navigation" />
+
+    <!-- Custom Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingVertical="4dp"
+        app:itemIconSize="18dp"
+        android:layout_alignParentBottom="true"
+    app:itemTextAppearanceActive="@style/TextAppearance.App.Small"
+    app:itemTextAppearanceInactive="@style/TextAppearance.App.Small"
+    android:background="@color/dark_background"
+    app:menu="@menu/bottom_nav_menu"
+    app:itemBackground="@drawable/nav_item_background"
+    app:itemIconTint="@color/bottom_nav_icon_color"
+    app:itemTextColor="@color/bottom_nav_icon_color"
+    app:labelVisibilityMode="labeled"
+    />
+
+
+</RelativeLayout>
